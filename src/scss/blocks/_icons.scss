@@ -1,0 +1,26 @@
+.icons-wrapper {
+	padding: 30px 0;
+	display: flex;
+	column-gap: 30px;
+}
+
+.icon {
+	fill: transparent;
+	stroke: transparent;
+	width: 24px;
+	height: 24px;
+}
+
+.icon--ticket-percent {
+	fill: #fff;
+}
+
+.icon--arrow-right {
+	stroke: #ffab00;
+}
+
+.icon--close {
+	width: 20px;
+	height: 20px;
+	fill: #343839;
+}
