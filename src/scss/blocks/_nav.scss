@@ -1,11 +1,58 @@
-.header__nav {
-}
 .nav {
-	font-size: 18px;
+	padding: 16px 0;
+	background-color: #ffc95c;
 }
+
+.nav__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__logo {
+}
+
+.logo {
+}
+
 .nav__list {
 	display: flex;
-	column-gap: 30px;
+	align-items: center;
+	gap: 40px;
 }
-.active {
+
+.nav__item {
+}
+
+.nav__link {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	color: #141718;
+}
+
+.nav__btns {
+	display: flex;
+	gap: 17px;
+	align-items: center;
+}
+
+.nav__btn {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.nav__btn-count {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	background-color: #141718;
+	border-radius: 50%;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 700;
+	color: var(--yellow);
 }
