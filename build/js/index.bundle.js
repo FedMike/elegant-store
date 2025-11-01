@@ -1,1 +1,0 @@
-!function(){"use strict";!function(){const e=document.querySelector(".tagline__close"),c=document.querySelector(".tagline");e.onclick=function(){c.remove()}}()}();
