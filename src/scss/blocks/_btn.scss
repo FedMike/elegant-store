@@ -10,10 +10,38 @@
     color: #fff;
     transition: all 0.2s ease-in;
 
-    &--s {
-    }
-
     &:hover {
         opacity: 0.9;
+    }
+
+    &--s {
+        padding: 9px 40px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+        line-height: 1.75;
+    }
+
+    &--wide {
+        width: 100%;
+    }
+
+    &--fav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.5);
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: #cc2e2e;
+            svg {
+                fill: #fff;
+            }
+        }
     }
 }

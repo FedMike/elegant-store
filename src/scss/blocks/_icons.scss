@@ -40,3 +40,14 @@
 .icon--shopping-bag {
 	stroke: #141718;
 }
+
+.icon--star {
+	stroke: #141718;
+	fill: #141718;
+}
+
+.icon--fav {
+	//stroke: #6C7275;
+	fill: #6c7275;
+	transition: all 0.2s ease-in;
+}
