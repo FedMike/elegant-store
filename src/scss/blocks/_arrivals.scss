@@ -1,4 +1,7 @@
 .arrivals {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
     padding: 48px 0;
 }
 
@@ -14,5 +17,7 @@
 .arrivals__dots {
 }
 
-.container-right {
+.arrivals__slider {
+    display: flex;
+    gap: 24px;
 }
