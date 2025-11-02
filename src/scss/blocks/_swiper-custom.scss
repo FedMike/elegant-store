@@ -1,16 +1,24 @@
-.dots {
+.swiper-slide {
+    width: 262px !important;
+}
+
+.swiper-pagination {
+    position: static !important;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.dot {
+.swiper-pagination-bullet {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 16px;
     height: 16px;
     border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in;
 
     &::before {
         content: "";
@@ -20,12 +28,12 @@
         border-radius: 50%;
         background-color: #6c7275;
     }
+}
 
-    &--active {
-        border: 1px solid #141718;
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 1px solid #141718;
 
-        &::before {
-            background-color: #141718;
-        }
+    &::before {
+        background-color: #141718;
     }
 }
