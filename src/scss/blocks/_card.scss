@@ -28,9 +28,16 @@
 }
 
 .card__picture {
+    max-height: 349px;
     position: relative;
     background-color: #f3f5f7;
     text-align: center;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .card__new {
