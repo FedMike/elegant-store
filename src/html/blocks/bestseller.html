@@ -1,0 +1,10 @@
+<section class="bestseller">
+    <div class="container">
+        <div class="bestseller__title">
+            <div class="headline-4">Best Seller</div>
+        </div>
+        <div class="bestseller__cards">
+            @@loop('./templates/card.html','./data/arrivals.json')
+        </div>
+    </div>
+</section>
