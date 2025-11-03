@@ -1,27 +1,12 @@
 .collection {
 }
 
-.container {
-}
-
 .collection__title {
     padding: 48px 0;
 }
 
-.headline-4 {
-}
-
 .collection__grid {
-}
-
-.plate {
-}
-
-.plate--tall {
-}
-
-.plate__title {
-}
-
-.plate__link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
