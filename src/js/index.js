@@ -1,21 +1,14 @@
-import Swiper from 'swiper/bundle';
-//import 'swiper/css/bundle';
-
-const swiper = new Swiper('.swiper', {
-    slidesPerView: "auto",
-    spaceBetween: 24,
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: 'true'
-    }
-})
-
 //import mobileNav from './modules/mobile-nav.js';
 //mobileNav();
+
+import swiper from './modules/swiper.js';
+swiper();
 
 // import isAvifWebp from 'avif-webp-checker';
 // isAvifWebp({ mode: 'webp' });
 
 import tagline from './modules/tagline.js';
 tagline();
+
+import timer from './modules/timer.js';
+timer();
