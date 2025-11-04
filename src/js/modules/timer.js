@@ -26,10 +26,10 @@ function timer() {
         const minutes = Math.floor(timeDifference % (1000 * 60 * 60) / (1000 * 60));
         const seconds = Math.floor(timeDifference % (1000 * 60) / 1000);
         
-        daysElements.innerText = days;
-        hoursElements.innerText = hours;
-        minutesElements.innerText = minutes;
-        secondsElements.innerText = seconds;
+        daysElements.innerText = days < 10 ? '0' + days : days;
+        hoursElements.innerText = hours < 10 ? '0' + hours : hours;
+        minutesElements.innerText = minutes < 10 ? '0' + minutes : minutes;
+        secondsElements.innerText = seconds < 10 ? '0' + seconds : seconds;
     }
 
     updateTimer(); //Запускаем счетчик при загрузке страницы

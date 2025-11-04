@@ -31,6 +31,12 @@
     left: 32px;
     right: 32px;
     bottom: 40px;
+
+    @include tablet {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
 }
 
 .plate--tall {
@@ -44,6 +50,11 @@
     font-weight: 500;
     color: #121212;
     letter-spacing: -0.6px;
+
+    @include tablet {
+        margin-bottom: 8px;
+        font-size: 28px;
+    }
 }
 
 .plate__link {
@@ -56,4 +67,8 @@
     line-height: 1.75;
     letter-spacing: -0.4px;
     border-bottom: 1px solid #121212;
+
+    @include tablet {
+        font-size: 14px;
+    }
 }
