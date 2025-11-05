@@ -28,7 +28,8 @@ const changed = require('gulp-changed');
 // Images
 const imagemin = require('gulp-imagemin');
 const imageminWebp = require('imagemin-webp');
-const extReplace = require('gulp-ext-replace');
+//const extReplace = require('gulp-ext-replace');
+const rename = require('gulp-rename');
 
 // SVG
 const svgsprite = require('gulp-svg-sprite');
@@ -129,7 +130,7 @@ gulp.task('images:docs', function () {
 				}),
 			])
 		)
-		.pipe(extReplace('.webp'))
+		.pipe(rename({ extname: '.webp' }))
 		.pipe(gulp.dest('./docs/img/'))
 		.pipe(gulp.src('./src/img/**/*'))
 		.pipe(changed('./docs/img/'))
