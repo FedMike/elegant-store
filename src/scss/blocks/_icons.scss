@@ -23,6 +23,15 @@
 	width: 20px;
 	height: 20px;
 	fill: #343839;
+	transition: all 0.2s ease-in;
+
+	@include mobile {
+		fill: #fff;
+	}
+
+	&:hover {
+		fill: #fff;
+	}
 }
 
 .icon--chevron-down {

@@ -24,6 +24,10 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 22px;
+
+    @include mobile {
+        font-size: 12px;
+    }
 }
 
 .tagline__link {
@@ -33,8 +37,12 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
-
+    color: var(--tagline-link);
     border-bottom: 1px solid var(--yellow);
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .icon--arrow-right {
@@ -48,4 +56,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 9;
+}
+
+.tagline__link-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    @include mobile {
+        display: inline-block;
+    }
 }
