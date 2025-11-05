@@ -22,4 +22,4 @@ gulp
 gulp docs
 ```
 
-[Смотреть демо](...)
+[Смотреть демо](https://fedmike.github.io/elegant-store/)
