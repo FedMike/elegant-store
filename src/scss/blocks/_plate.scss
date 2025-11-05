@@ -24,6 +24,10 @@
             background-image: url("./../../img/collections/03@2x.jpg");
         }
     }
+
+    @include mobile {
+        padding-bottom: 0;
+    }
 }
 
 .plate__content {
