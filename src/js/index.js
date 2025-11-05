@@ -1,8 +1,8 @@
-//import mobileNav from './modules/mobile-nav.js';
-//mobileNav();
-
 import swiper from './modules/swiper.js';
 swiper();
+
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();
 
 // import isAvifWebp from 'avif-webp-checker';
 // isAvifWebp({ mode: 'webp' });

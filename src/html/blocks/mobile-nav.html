@@ -1,6 +1,85 @@
 <div class="mobile-nav">
-	<ul class="mobile-nav__list">
-		<li><a href="index.html">Главная</a></li>
-		<li><a href="docs.html">Документация</a></li>
-	</ul>
+    <div class="mobile-nav__top">
+        <div class="mobile-nav__header">
+            <a href="#!" class="logo logo--s">3legant<span>.</span></a>
+            <button id="close-mobile-nav">
+                <svg class="icon icon--close-nav">
+                    <use href="./img/svgsprite/sprite.symbol.svg#close-nav"></use>
+                </svg>
+            </button>
+        </div>
+        <form class="mobile-nav__search">
+            <div class="mobile-nav__search-label">
+                <svg class="icon icon--search">
+                    <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                </svg>
+                <input class="mobile-nav__search-input" type="text" placeholder="Search">
+            </div>
+        </form>
+        <div class="mobile-nav__nav">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="#!" class="mobile-nav__link">Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <button href="#!" class="mobile-nav__link">Shop <svg class="icon icon--chevron-down">
+                            <use href="./img/svgsprite/sprite.symbol.svg#chevron-down"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="mobile-nav__item">
+                    <button href="#!" class="mobile-nav__link">Product <svg class="icon icon--chevron-down">
+                            <use href="./img/svgsprite/sprite.symbol.svg#chevron-down"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#!" class="mobile-nav__link">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-nav__bottom">
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item mobile-nav__item--gray">
+                <button href="#!" class="mobile-nav__link mobile-nav__link--gray">Cart
+                    <span class="nav__btn">
+                        <svg class="icon icon--shopping-bag">
+                            <use href="./img/svgsprite/sprite.symbol.svg#shopping-bag"></use>
+                        </svg>
+                        <span class="nav__btn-count nav__btn-count--white">2</span>
+                    </span>
+                </button>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--gray">
+                <button href="#!" class="mobile-nav__link mobile-nav__link--gray">Wishlist
+                    <span class="nav__btn">
+                        <svg class="icon icon--heart">
+                            <use href="./img/svgsprite/sprite.symbol.svg#heart"></use>
+                        </svg>
+                        <span class="nav__btn-count nav__btn-count--white">2</span>
+                    </span>
+                </button>
+            </li>
+        </ul>
+        <a href="#!" class="btn btn--wide">Sign In</a>
+        <div class="mobile-nav__socials">
+            <a href="#!">
+                <svg class="icon icon--instagram">
+                    <use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+                </svg>
+            </a>
+            <a href="#!">
+                <svg class="icon icon--facebook">
+                    <use href="./img/svgsprite/sprite.symbol.svg#facebook"></use>
+                </svg>
+            </a>
+            <a href="#!">
+                <svg class="icon icon--youtube">
+                    <use href="./img/svgsprite/sprite.symbol.svg#youtube"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
 </div>
+<div class="mobile-nav-fade"></div>
