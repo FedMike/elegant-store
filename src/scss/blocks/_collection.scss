@@ -1,4 +1,7 @@
 .collection {
+    @include mobile {
+        padding-bottom: 40px;
+    }
 }
 
 .collection__title {
@@ -6,6 +9,7 @@
 
     @include mobile {
         padding: 40px 0 16px;
+        text-align: center;
     }
 }
 
