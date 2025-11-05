@@ -3,6 +3,10 @@
 
 .collection__title {
     padding: 48px 0;
+
+    @include mobile {
+        padding: 40px 0 16px;
+    }
 }
 
 .collection__grid {
