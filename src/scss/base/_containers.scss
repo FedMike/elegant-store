@@ -68,7 +68,7 @@
 		padding-right: var(--container-padding);
 	}
 
-	//@include mobile {
-	//	padding: 0 var(--container-padding);
-	//}
+	@include mobile {
+		padding: 0 var(--container-padding);
+	}
 }
