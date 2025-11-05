@@ -6,16 +6,30 @@
 	a {
 		color: #fefefe;
 	}
+
+	@include mobile {
+		padding: 48px 0px;
+	}
 }
 
 .footer__row {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+	}
 }
 
 .footer__row-top {
 	padding-bottom: 50px;
+
+	@include mobile {
+		padding-bottom: 40px;
+	}
 }
 
 .footer__title {
@@ -23,6 +37,11 @@
 	gap: 32px;
 	align-items: center;
 	flex-shrink: 0;
+
+	@include mobile {
+		flex-direction: column;
+		gap: 16px;
+	}
 }
 
 .footer__logo {
@@ -37,6 +56,11 @@
 	flex-shrink: 0;
 	width: 1px;
 	height: 24px;
+
+	@include mobile {
+		width: 24px;
+		height: 1px;
+	}
 }
 
 .footer__store {
@@ -55,12 +79,22 @@
 	align-items: center;
 	font-size: 14px;
 	line-height: 1.571;
+
+	@include mobile {
+		flex-direction: column;
+		gap: 32px;
+	}
 }
 
 .footer__row--border {
 	padding-top: 16px;
 	padding-bottom: 20px;
 	border-top: 0.5px solid #6c7275;
+
+	@include mobile {
+		gap: 32px;
+		padding: 24px 0;
+	}
 }
 
 .footer__copyrights {
@@ -73,10 +107,24 @@
 		font-weight: 600;
 		line-height: 1.667;
 	}
+
+	@include mobile {
+		flex-direction: column-reverse;
+	}
+}
+
+.footer__copyrights-links {
+	display: flex;
+	gap: 28px;
+	align-items: center;
 }
 
 .footer__socials {
 	display: flex;
 	align-items: center;
 	gap: 24px;
+
+	@include mobile {
+		order: -1;
+	}
 }
