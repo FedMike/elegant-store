@@ -9,10 +9,28 @@
 	justify-content: space-between;
 }
 
+.nav__btn-mobile {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}
+
+.nav__logo {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
 .nav__list {
 	display: flex;
 	align-items: center;
 	gap: 40px;
+
+	@include mobile {
+		display: none;
+	}
 }
 
 .nav__link {
@@ -32,6 +50,13 @@
 	display: flex;
 	align-items: center;
 	gap: 5px;
+}
+
+@include mobile {
+	.nav__btn--search,
+	.nav__btn--user {
+		display: none;
+	}
 }
 
 .nav__btn-count {
